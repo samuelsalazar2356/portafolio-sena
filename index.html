@@ -11,7 +11,9 @@
 
 <body>
 
-<!-- ENCABEZADO -->
+<!-- --------------------------------------------
+Parte de arriba de mi pagina  
+-------------------------------------------- -->
 <header class="encabezado">
     <div class="contenedor fila-header">
         <div class="texto-encabezado">
@@ -38,185 +40,200 @@
 
 <main class="contenedor">
 
-    <!-- PORTADA -->
-    <section class="caja-seccion portada">
-        <div class="portada-inner">
+<!-- --------------------------------------------
+Portada principal de mi pagina  
+-------------------------------------------- -->
+<section class="caja-seccion portada">
+    <div class="portada-inner">
 
-            <div class="sobre-mi-portada">
-                <h2 class="titulo-seccion">Sobre mí</h2>
-                <p class="texto-seccion">
-                    Soy Samuel, desarrollo videojuegos en la plataforma Roblox y cuento con varios años de experiencia en Roblox Studio,
-                    programación, modelado, creación de mapas y más. Formo parte del equipo de desarrollo del videojuego “Paraíso Medellín”.
+        <div class="sobre-mi-portada">
+            <h2 class="titulo-seccion">Sobre mí</h2>
+            <p class="texto-seccion">
+                Soy Samuel, desarrollo videojuegos en la plataforma Roblox y cuento con varios años de experiencia en Roblox Studio,
+                programación, modelado, creación de mapas y más. Formo parte del equipo de desarrollo del videojuego “Paraíso Medellín”.
+            </p>
+        </div>
+
+        <div class="imagen-portada">
+            <img src="img/imagen de portada.jpeg" alt="Samuel Salazar" id="imagen-perfil-principal">
+        </div>
+
+    </div>
+</section>
+
+<!-- --------------------------------------------
+Parte donde muestro mi proyecto principal  
+-------------------------------------------- -->
+<section class="caja-seccion seccion-proyecto">
+    <div class="rejilla-proyecto">
+
+        <!-- --------------------------------------------
+Imagenes que se mueven solas de mi proyecto  
+-------------------------------------------- -->
+        <div class="envoltorio-slider">
+            <div class="slider" id="slider">
+                <img class="diapositiva activa" src="img/proyecto portafolio 3.jpg" alt="Imagen del proyecto 1">
+                <img class="diapositiva" src="img/proyecto potafolio 2.jpg" alt="Imagen del proyecto 2">
+                <img class="diapositiva" src="img/Proyecto portafolio.jpg" alt="Imagen del proyecto 3">
+            </div>
+
+            <div class="puntos" id="dots">
+                <button class="punto activo" data-index="0"></button>
+                <button class="punto" data-index="1"></button>
+                <button class="punto" data-index="2"></button>
+            </div>
+        </div>
+
+        <div class="info-proyecto">
+            <h2 class="titulo-seccion">PROYECTO PARAÍSO MEDIO</h2>
+
+            <p id="texto-proyecto" class="texto-seccion">
+                En 2021 nació este proyecto de la mano de un equipo de desarrolladores de Medellín fanáticos del Metro de Medellín.
+                Nuestra misión es que la cultura metro no solo se viva en persona, sino también a escala dentro de un videojuego.
+            </p>
+
+            <p class="texto-seccion">
+                Buscamos que personas de otros países conozcan el sistema, aumenten su interés por el turismo y comprendan
+                lo valioso que es para Medellín nuestro Metro.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- --------------------------------------------
+Lista de mis habilidades  
+-------------------------------------------- -->
+<section class="caja-seccion">
+    <h2 class="titulo-seccion">Mis habilidades</h2>
+
+    <div class="rejilla-habilidades">
+
+        <div class="tarjeta-habilidad">
+            <img src="img/img/icons/programacion.png" class="icono-habilidad" alt="Programación">
+            <div>
+                <h4>Programación</h4>
+                <p>Python · Lua · JavaScript</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <img src="img/img/icons/Tester de video juegos.png" class="icono-habilidad" alt="Pruebas de videojuegos">
+            <div>
+                <h4>Pruebas de videojuegos</h4>
+                <p>Optimización · Corrección de errores · Mejoras visuales</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <img src="img/img/icons/MODELADO 3D png.png" class="icono-habilidad" alt="Modelado 3D">
+            <div>
+                <h4>Modelado 3D</h4>
+                <p>Escenarios · Objetos · Texturas</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <img src="img/img/icons/base de datos.png" class="icono-habilidad" alt="Bases de datos">
+            <div>
+                <h4>Bases de datos</h4>
+                <p>SQL · Integraciones · Guardado de datos</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <img src="img/img/icons/Github icono samu.png" class="icono-habilidad" alt="Control de versiones">
+            <div>
+                <h4>Control de versiones</h4>
+                <p>GitHub · GitLab</p>
+            </div>
+        </div>
+
+        <div class="tarjeta-habilidad">
+            <img src="img/img/icons/roblox studio para samu.png" class="icono-habilidad" alt="Desarrollo en Roblox">
+            <div>
+                <h4>Desarrollo de videojuegos</h4>
+                <p>Roblox Studio</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- --------------------------------------------
+Parte donde explico más de mi trabajo  
+-------------------------------------------- -->
+<section class="caja-seccion">
+    <h2 class="titulo-seccion">Más sobre mi trabajo</h2>
+
+    <div class="grid-info">
+
+        <div class="card-info boton-trabajo">
+            <img src="img/img/icons/Experiencia en proyectos imagen.png" class="card-icono" alt="Experiencia">
+            <h3>Experiencia en proyectos</h3>
+            <p>He participado en modelos, sistemas, mapas y lógica de juego.</p>
+        </div>
+
+        <div class="card-info boton-trabajo">
+            <img src="img/img/icons/imagen de educacion.png" class="card-icono" alt="Educación">
+            <h3>Educación</h3>
+            <p>- Tecnólogo en ADSO</p>
+            <p>- Técnico en operación de eventos</p>
+        </div>
+
+        <div class="card-info boton-trabajo">
+            <img src="img/img/icons/Logo de mi mi juego.png" class="card-icono" alt="Proyectos">
+            <h3>Proyectos en Roblox</h3>
+            <p><strong>Paraíso Medellín:</strong> Sistema de metro a escala</p>
+            <p><strong>Dream:</strong> Juego propio en desarrollo</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- --------------------------------------------
+Formulario para que me escriban  
+-------------------------------------------- -->
+<section class="caja-seccion contacto-grande" id="contacto">
+
+    <div class="contacto-contenedor">
+
+        <div class="contacto-texto-form">
+            <h2 class="titulo-seccion">Contáctame</h2>
+
+            <form class="formulario-contacto" id="form-contacto" onsubmit="return false;">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido">
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Número de contacto">
+                <textarea placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+
+                <button class="btn-principal" id="btn-enviar">Enviar</button>
+
+                <p id="mensaje-estado" style="display:none; margin-top:10px; color:green; font-weight:600;">
+                    Tu mensaje fue enviado correctamente.
                 </p>
-            </div>
-
-            <div class="imagen-portada">
-                <img src="img/imagen de portada.jpeg" alt="Samuel Salazar" id="imagen-perfil-principal">
-            </div>
-
+            </form>
         </div>
-    </section>
 
-    <!-- PROYECTO -->
-    <section class="caja-seccion seccion-proyecto">
-        <div class="rejilla-proyecto">
-
-            <!-- CARRUSEL -->
-            <div class="envoltorio-slider">
-                <div class="slider" id="slider">
-                    <img class="diapositiva activa" src="img/proyecto portafolio 3.jpg" alt="Imagen del proyecto 1">
-                    <img class="diapositiva" src="img/proyecto potafolio 2.jpg" alt="Imagen del proyecto 2">
-                    <img class="diapositiva" src="img/Proyecto portafolio.jpg" alt="Imagen del proyecto 3">
-                </div>
-
-                <div class="puntos" id="dots">
-                    <button class="punto activo" data-index="0"></button>
-                    <button class="punto" data-index="1"></button>
-                    <button class="punto" data-index="2"></button>
-                </div>
-            </div>
-
-            <div class="info-proyecto">
-                <h2 class="titulo-seccion">PROYECTO PARAÍSO MEDIO</h2>
-
-                <p id="texto-proyecto" class="texto-seccion">
-                    En 2021 nació este proyecto de la mano de un equipo de desarrolladores de Medellín fanáticos del Metro de Medellín.
-                    Nuestra misión es que la cultura metro no solo se viva en persona, sino también a escala dentro de un videojuego.
-                </p>
-
-                <p class="texto-seccion">
-                    Buscamos que personas de otros países conozcan el sistema, aumenten su interés por el turismo y comprendan
-                    lo valioso que es para Medellín nuestro Metro.
-                </p>
-            </div>
-
+        <div class="contacto-imagen">
+            <img src="img/img/icons/LOGO OFFICIAL MIO DE SAMU.png" alt="Logo personal">
         </div>
-    </section>
 
-    <!-- HABILIDADES -->
-    <section class="caja-seccion">
-        <h2 class="titulo-seccion">Mis habilidades</h2>
-
-        <div class="rejilla-habilidades">
-
-            <div class="tarjeta-habilidad">
-                <img src="img/img/icons/programacion.png" class="icono-habilidad" alt="Programación">
-                <div>
-                    <h4>Programación</h4>
-                    <p>Python · Lua · JavaScript</p>
-                </div>
-            </div>
-
-            <div class="tarjeta-habilidad">
-                <img src="img/img/icons/Tester de video juegos.png" class="icono-habilidad" alt="Pruebas de videojuegos">
-                <div>
-                    <h4>Pruebas de videojuegos</h4>
-                    <p>Optimización · Corrección de errores · Mejoras visuales</p>
-                </div>
-            </div>
-
-            <div class="tarjeta-habilidad">
-                <img src="img/img/icons/MODELADO 3D png.png" class="icono-habilidad" alt="Modelado 3D">
-                <div>
-                    <h4>Modelado 3D</h4>
-                    <p>Escenarios · Objetos · Texturas</p>
-                </div>
-            </div>
-
-            <div class="tarjeta-habilidad">
-                <img src="img/img/icons/base de datos.png" class="icono-habilidad" alt="Bases de datos">
-                <div>
-                    <h4>Bases de datos</h4>
-                    <p>SQL · Integraciones · Guardado de datos</p>
-                </div>
-            </div>
-
-            <div class="tarjeta-habilidad">
-                <img src="img/img/icons/Github icono samu.png" class="icono-habilidad" alt="Control de versiones">
-                <div>
-                    <h4>Control de versiones</h4>
-                    <p>GitHub · GitLab</p>
-                </div>
-            </div>
-
-            <div class="tarjeta-habilidad">
-                <img src="img/img/icons/roblox studio para samu.png" class="icono-habilidad" alt="Desarrollo en Roblox">
-                <div>
-                    <h4>Desarrollo de videojuegos</h4>
-                    <p>Roblox Studio</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- MÁS SOBRE MI TRABAJO -->
-    <section class="caja-seccion">
-        <h2 class="titulo-seccion">Más sobre mi trabajo</h2>
-
-        <div class="grid-info">
-
-            <div class="card-info boton-trabajo">
-                <img src="img/img/icons/Experiencia en proyectos imagen.png" class="card-icono" alt="Experiencia">
-                <h3>Experiencia en proyectos</h3>
-                <p>He participado en modelos, sistemas, mapas y lógica de juego.</p>
-            </div>
-
-            <div class="card-info boton-trabajo">
-                <img src="img/img/icons/imagen de educacion.png" class="card-icono" alt="Educación">
-                <h3>Educación</h3>
-                <p>- Tecnólogo en ADSO</p>
-                <p>- Técnico en operación de eventos</p>
-            </div>
-
-            <div class="card-info boton-trabajo">
-                <img src="img/img/icons/Logo de mi mi juego.png" class="card-icono" alt="Proyectos">
-                <h3>Proyectos en Roblox</h3>
-                <p><strong>Paraíso Medellín:</strong> Sistema de metro a escala</p>
-                <p><strong>Dream:</strong> Juego propio en desarrollo</p>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="caja-seccion contacto-grande" id="contacto">
-
-        <div class="contacto-contenedor">
-
-            <div class="contacto-texto-form">
-                <h2 class="titulo-seccion">Contáctame</h2>
-
-                <form class="formulario-contacto" id="form-contacto" onsubmit="return false;">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="text" placeholder="Apellido">
-                    <input type="email" placeholder="Correo electrónico" required>
-                    <input type="tel" placeholder="Número de contacto">
-                    <textarea placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
-
-                    <button class="btn-principal" id="btn-enviar">Enviar</button>
-
-                    <p id="mensaje-estado" style="display:none; margin-top:10px; color:green; font-weight:600;">
-                        Tu mensaje fue enviado correctamente.
-                    </p>
-                </form>
-            </div>
-
-            <div class="contacto-imagen">
-                <img src="img/img/icons/LOGO OFFICIAL MIO DE SAMU.png" alt="Logo personal">
-            </div>
-
-        </div>
-    </section>
+    </div>
+</section>
 
 </main>
 
-<!-- PIE -->
+<!-- --------------------------------------------
+Parte final de mi pagina  
+-------------------------------------------- -->
 <footer class="pie" id="sociales">
     <div class="contenedor fila-pie">
         <div class="iconos-sociales">
 
-            <a href="img/img/icons/FACEBOOK.png" class="enlace-social" target="_blank">
+            
+            <a href="https://www.facebook.com/samuel.salazar.624784?locale=es_LA" class="enlace-social" target="_blank">
                 <img src="img/img/icons/logo de facebook.webp" alt="Facebook">
                 <span>Facebook</span>
             </a>
@@ -235,7 +252,6 @@
     </div>
 </footer>
 
-<!-- SOLO TU ARCHIVO JS -->
 <script src="portafolio.js"></script>
 
 </body>

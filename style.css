@@ -1,4 +1,6 @@
-/* Sección */
+/* --------------------------------------------
+Colores y estilo que usa mi página
+-------------------------------------------- */
 :root{
     --primario: #0d1b2a;
     --secundario: #1b263b;
@@ -9,7 +11,9 @@
     --fuente: "Poppins", sans-serif;
 }
 
-/* Reset */
+/* --------------------------------------------
+Ajustes básicos para que todo se vea parejo
+-------------------------------------------- */
 *{ box-sizing:border-box; margin:0; padding:0; }
 html,body{ height:100%; }
 body{
@@ -19,21 +23,24 @@ body{
     -webkit-font-smoothing:antialiased;
 }
 
-/* CONTENEDOR GENERAL */
+/* --------------------------------------------
+Espacio principal donde va mi contenido
+-------------------------------------------- */
 .contenedor{
     max-width:1100px;
     margin:auto;
     padding:20px;
 }
 
-/* HEADER */
+/* --------------------------------------------
+Parte de arriba de mi página
+-------------------------------------------- */
 .encabezado{
     background:var(--primario);
     color:white;
     padding:18px 0;
     position:relative;
     z-index:20;
-    overflow:visible;
 }
 .fila-header{
     display:flex;
@@ -45,18 +52,18 @@ body{
 .nombre{
     font-size:40px;
     font-weight:700;
-    line-height:1;
 }
 .subtitulo{
     font-size:15px;
     opacity:.85;
 }
 
-/* Botones desktop */
+/* --------------------------------------------
+Botones principales que muestro arriba
+-------------------------------------------- */
 .header-botones{
     display:flex;
     gap:12px;
-    align-items:center;
 }
 .btn-header{
     background:var(--acento);
@@ -70,7 +77,9 @@ body{
     white-space:nowrap;
 }
 
-/* MENÚ MOVIL */
+/* --------------------------------------------
+Botón y menú que aparecen solo en celular
+-------------------------------------------- */
 .menu-movil{
     display:none;
     align-items:center;
@@ -99,11 +108,9 @@ body{
     width:100%;
     margin-top:12px;
     padding:8px 0;
-    background:transparent;
 }
 .menu-link{
     display:block;
-    width:100%;
     text-align:center;
     padding:10px 12px;
     text-decoration:none;
@@ -120,7 +127,9 @@ body{
     display:block;
 }
 
-/* CAJAS */
+/* --------------------------------------------
+Cajas donde muestro secciones de mi página
+-------------------------------------------- */
 .caja-seccion{
     background:white;
     padding:22px;
@@ -130,7 +139,9 @@ body{
     border:2px solid var(--acento);
 }
 
-/* PORTADA */
+/* --------------------------------------------
+Parte donde muestro mi foto y presentación
+-------------------------------------------- */
 .portada-inner{
     display:grid;
     grid-template-columns:1fr 0.9fr;
@@ -144,7 +155,9 @@ body{
     box-shadow:var(--sombra);
 }
 
-/* PROYECTO */
+/* --------------------------------------------
+Proyectos que muestro en mi página
+-------------------------------------------- */
 .rejilla-proyecto{
     display:grid;
     grid-template-columns:1fr 1fr;
@@ -163,14 +176,15 @@ body{
     width:14px;
     height:14px;
     background:var(--acento);
-    border:none;
     border-radius:50%;
     opacity:.35;
     cursor:pointer;
 }
 .punto.activo{opacity:1;}
 
-/* HABILIDADES */
+/* --------------------------------------------
+Habilidades que quiero mostrar
+-------------------------------------------- */
 .rejilla-habilidades{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
@@ -191,14 +205,15 @@ body{
     transform:scale(1.05);
     background:var(--acento);
     color:white;
-    box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 .icono-habilidad{
     width:46px;
     height:46px;
 }
 
-/* MÁS SOBRE MI TRABAJO */
+/* --------------------------------------------
+Datos extras sobre mi trabajo
+-------------------------------------------- */
 .grid-info{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(240px,1fr));
@@ -213,13 +228,13 @@ body{
 }
 .card-icono{
     width:120px;
-    max-width:120px;
-    height:auto;
     display:block;
     margin:0 auto 12px auto;
 }
 
-/* Animación botones trabajo */
+/* --------------------------------------------
+Botones con animación suave
+-------------------------------------------- */
 .boton-trabajo{
     transition:.3s ease;
     cursor:pointer;
@@ -228,10 +243,11 @@ body{
     transform:scale(1.05);
     background:var(--acento);
     color:white;
-    box-shadow:0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* CONTACTO */
+/* --------------------------------------------
+Espacio donde la gente me puede contactar
+-------------------------------------------- */
 .contacto-grande{margin-top:60px;}
 .contacto-contenedor{
     display:flex;
@@ -261,21 +277,22 @@ body{
     cursor:pointer;
 }
 
-/* LOGO CONTACTO */
+/* --------------------------------------------
+Imagen que acompaña la parte de contacto
+-------------------------------------------- */
 .contacto-imagen{
     width:40%;
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 .contacto-imagen img{
-    width:auto;
     max-width:320px;
-    height:auto;
     display:block;
 }
 
-/* PIE */
+/* --------------------------------------------
+Parte final de mi página
+-------------------------------------------- */
 .pie{
     background:var(--primario);
     margin-top:40px;
@@ -285,7 +302,6 @@ body{
 .iconos-sociales{display:flex;gap:25px;flex-wrap:wrap;justify-content:center;}
 .enlace-social{
     display:flex;
-    flex-direction:row;
     align-items:center;
     gap:8px;
     color:white;
@@ -295,14 +311,15 @@ body{
 .enlace-social img{
     width:28px;
     height:28px;
-    object-fit:contain;
 }
 .enlace-social img[alt="Facebook"]{
     width:38px;
     height:38px;
 }
 
-/* RESPONSIVE */
+/* --------------------------------------------
+Cómo se acomoda mi página en pantallas pequeñas
+-------------------------------------------- */
 @media (max-width: 750px) {
     .contenedor{ padding:16px; max-width:960px; }
     .header-botones{ display:none !important; }
@@ -313,22 +330,28 @@ body{
     .contacto-contenedor{ flex-direction:column; align-items:center; gap:18px; }
     .contacto-texto-form{ width:100%; }
     .contacto-imagen{ width:100%; }
-    .contacto-imagen img{ width:70%; height:auto; max-width:240px; }
+    .contacto-imagen img{ width:70%; max-width:240px; }
     .rejilla-proyecto{ grid-template-columns:1fr; }
     .rejilla-habilidades{ grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); }
     .slider{ height:220px; }
     .btn-header{ padding:9px 12px; font-size:14px; }
 }
 
+/* --------------------------------------------
+Cómo se ve mi página en tablets
+-------------------------------------------- */
 @media (min-width: 751px) and (max-width: 1023px) {
     .menu-movil{ display:none; }
     .header-botones{ display:flex; }
     .contenedor{ padding:18px; }
-    .portada-inner{ grid-template-columns:1fr 0.9fr; text-align:left; }
+    .portada-inner{ grid-template-columns:1fr 0.9fr; }
     .imagen-portada img{ max-width:300px; }
     .contacto-imagen img{ max-width:320px; }
 }
 
+/* --------------------------------------------
+Cómo se ve mi página en pantallas grandes
+-------------------------------------------- */
 @media (min-width: 1024px) {
     .menu-movil{ display:none; }
     .header-botones{ display:flex; }
@@ -336,6 +359,6 @@ body{
     .portada-inner{ grid-template-columns:1fr 0.9fr; }
     .imagen-portada img{ max-width:340px; }
     .contacto-imagen{ width:40%; }
-    .contacto-imagen img{ width:auto; max-width:600px; }
+    .contacto-imagen img{ max-width:600px; }
     .slider{ height:330px; }
 }

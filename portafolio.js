@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    /* =====================================================
-       CARRUSEL
-    ====================================================== */
+    /* --------------------------------------------
+    Imágenes que se mueven solas tipo carrucel 
+    -------------------------------------------- */
     (function () {
         const diapositivas = document.querySelectorAll('.diapositiva');
         const puntos = document.querySelectorAll('.punto');
@@ -34,9 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     })();
 
 
-    /* =====================================================
-MENÚ MÓVIL (cerrar al hacer clic)
-    ====================================================== */
+    /* --------------------------------------------
+    Menú de mi página que se cierra al tocar una opción
+    -------------------------------------------- */
     (function () {
         const toggle = document.getElementById('toggle-menu');
         const menuLinks = document.querySelectorAll('.menu-link');
@@ -51,9 +51,9 @@ MENÚ MÓVIL (cerrar al hacer clic)
     })();
 
 
-    /* =====================================================
-FORMULARIO SIMPLE
-    ====================================================== */
+    /* --------------------------------------------
+    Formulario  para escribir y enviar mensaje
+    -------------------------------------------- */
     (function () {
         const form = document.getElementById('form-contacto');
         const estado = document.getElementById('mensaje-estado');
