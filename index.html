@@ -77,7 +77,7 @@
             </div>
 
             <div class="info-proyecto">
-                <h2 class="titulo-seccion">PROYECTO PARAÍSO MEDELLÍN</h2>
+                <h2 class="titulo-seccion">PROYECTO PARAÍSO MEDIO</h2>
 
                 <p id="texto-proyecto" class="texto-seccion">
                     En 2021 nació este proyecto de la mano de un equipo de desarrolladores de Medellín fanáticos del Metro de Medellín.
@@ -235,31 +235,7 @@
     </div>
 </footer>
 
-<!-- SCRIPT DEL CARRUSEL -->
-<script>
-(function () {
-    const diapositivas = document.querySelectorAll('.diapositiva');
-    const puntos = document.querySelectorAll('.punto');
-
-    let indice = 0;
-
-    function mostrarDiapositiva(i) {
-        indice = (i + diapositivas.length) % diapositivas.length;
-        diapositivas.forEach((img, pos) => img.classList.toggle('activa', pos === indice));
-        puntos.forEach((p, pos) => p.classList.toggle('activo', pos === indice));
-    }
-
-    puntos.forEach(punto =>
-        punto.addEventListener('click', e =>
-            mostrarDiapositiva(parseInt(e.target.dataset.index))
-        )
-    );
-
-    setInterval(() => mostrarDiapositiva(indice + 1), 5000);
-    mostrarDiapositiva(0);
-})();
-</script>
-
+<!-- SOLO TU ARCHIVO JS -->
 <script src="portafolio.js"></script>
 
 </body>
