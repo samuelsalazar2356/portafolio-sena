@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.getElementById("form-contacto");
-    const estado = document.getElementById("mensaje-estado");
+    const formulario = document.getElementById("form-contacto");
+    const mensajeEstado = document.getElementById("mensaje-estado");
 
-    form.addEventListener("submit", (e) => {
+    formulario.addEventListener("submit", (e) => {
         e.preventDefault();
 
         // Mostrar mensaje
-        estado.style.display = "block";
+        mensajeEstado.style.display = "block";
 
         // Limpiar formulario
-        form.reset();
+        formulario.reset();
 
-        // Ocultar el mensaje después de unos segundos (opcional)
+        // Ocultar mensaje después de 3 segundos
         setTimeout(() => {
-            estado.style.display = "none";
+            mensajeEstado.style.display = "none";
         }, 3000);
     });
 });
